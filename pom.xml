@@ -41,8 +41,8 @@
 		<connection>scm:git:git@github.com:openmrs/openmrs-core</connection>
 		<developerConnection>scm:git:git@github.com:openmrs/openmrs-core</developerConnection>
 		<url>https://github.com/openmrs/openmrs-core</url>
-	  <tag>2.3.3</tag>
-  </scm>
+		<tag>2.3.3</tag>
+	</scm>
 
 	<ciManagement>
 		<system>Bamboo</system>
@@ -93,6 +93,13 @@
 				<version>${project.version}</version>
 				<type>war</type>
 			</dependency>
+			<!--START -->
+			<dependency>
+				<groupId>net.bull.javamelody</groupId>
+				<artifactId>javamelody-core</artifactId>			
+				</dependency>
+				<!--END -->
+	
 			<dependency>
 				<groupId>javax.servlet</groupId>
 				<artifactId>javax.servlet-api</artifactId>
@@ -519,9 +526,9 @@
 				<version>2.10.6</version>
 			</dependency>
 			<dependency>
-			    <groupId>commons-validator</groupId>
-			    <artifactId>commons-validator</artifactId>
-			    <version>1.4.0</version>
+				<groupId>commons-validator</groupId>
+				<artifactId>commons-validator</artifactId>
+				<version>1.4.0</version>
 			</dependency>
 			<dependency>
 				<groupId>org.aspectj</groupId>
